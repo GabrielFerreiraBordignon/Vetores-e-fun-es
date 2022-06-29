@@ -1,0 +1,18 @@
+#5. Inicie um vetor com alguns nomes de pessoas. Em seguida, peça que o usuário digite um nome qualquer de pessoa. 
+#Escrever a mensagem “ACHEI”, se o nome estiver armazenado no vetor ou “NÃO ACHEI” caso contrário. 
+vetorNomes=["carlos", "marta", "joaquim", "flavio"]
+
+nome=input("Digite um nome")
+
+achei=False
+
+for i in range(len(vetorNomes)):
+    if(nome==vetorNomes[i]):
+        achei=True
+        break
+
+if(achei==True):
+    print("ACHEI")
+else:
+    print("Não Achei")
+
